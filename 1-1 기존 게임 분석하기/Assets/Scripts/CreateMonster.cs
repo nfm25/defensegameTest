@@ -6,11 +6,9 @@ public class CreateMonster : MonoBehaviour {
 
     private GameManager gameManager;
 
-    public GameObject respawnSpot1;
-    public GameObject respawnSpot2;
-    public GameObject respawnSpot3;
-    public GameObject respawnSpot4;
-
+    public List<GameObject> respawnSpotList; // 자료형인 List를 public으로 선언해주면, 유니티가 자동으로
+                                             // 인스펙터창에서 리스트의 각 원소들을 설정해줄 수 있는 형태로 바꿔준다.
+    
     public GameObject monster1Prefab;
     public GameObject monster2Prefab;
 
@@ -34,24 +32,8 @@ public class CreateMonster : MonoBehaviour {
                 && spawnCount < gameManager.spawnNumber)
             {
                 lastSpawnTime = Time.time;
-                int respawnSpotNumber = Random.Range(1, 5); // 1~4까지의 숫자 중에서 랜덤한 숫자의 리스폰스팟 선택
-                GameObject respawnSpot = null;
-                if(respawnSpotNumber == 1)
-                {
-                    respawnSpot = respawnSpot1;
-                }
-                if (respawnSpotNumber == 2)
-                {
-                    respawnSpot = respawnSpot2;
-                }
-                if (respawnSpotNumber == 3)
-                {
-                    respawnSpot = respawnSpot3;
-                }
-                if (respawnSpotNumber == 4)
-                {
-                    respawnSpot = respawnSpot4;
-                }
+                int index = Random.Range(0, 4); // 0~3 까지의 숫자 중에서 랜덤한 숫자의 리스폰스팟 선택
+                GameObject respawnSpot = respawnSpotList[index];
                 Instantiate(monsterPrefab, respawnSpot.transform.position, Quaternion.identity);
                 spawnCount += 1;
             }
