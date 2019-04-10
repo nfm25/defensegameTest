@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 324}
   m_MaxSize: {x: 4004, y: 8024}
   vertical: 1
-  controlID: 17
+  controlID: 59
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -216,7 +216,7 @@ MonoBehaviour:
   m_MinSize: {x: 681, y: 598}
   m_MaxSize: {x: 18008, y: 18048}
   vertical: 0
-  controlID: 14
+  controlID: 56
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 598}
   m_MaxSize: {x: 14006, y: 18048}
   vertical: 1
-  controlID: 15
+  controlID: 57
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 324}
   m_MaxSize: {x: 8004, y: 8024}
   vertical: 0
-  controlID: 16
+  controlID: 58
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -347,7 +347,7 @@ MonoBehaviour:
   - {fileID: 19}
   - {fileID: 24}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 54240000
+      m_SelectedIDs: 84240000
       m_LastClickedID: 0
       m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
@@ -854,8 +854,8 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "E:\\Unity Practice\\defensegameTest\\1-1 \uAE30\uC874 \uAC8C\uC784
-    \uBD84\uC11D\uD558\uAE30"
+  m_LastProjectPath: "E:\\Unity Practice-with Git\\defensegameTest\\1-1 \uAE30\uC874
+    \uAC8C\uC784 \uBD84\uC11D\uD558\uAE30"
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
