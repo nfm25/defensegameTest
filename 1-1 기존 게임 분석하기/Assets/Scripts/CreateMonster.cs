@@ -33,6 +33,7 @@ public class CreateMonster : MonoBehaviour {
                 int index = Random.Range(0, 4); // 0~3 까지의 숫자 중에서 랜덤한 숫자의 리스폰스팟 선택
                 GameObject respawnSpot = respawnSpotList[index];
                 Instantiate(monsterPrefab, respawnSpot.transform.position, Quaternion.identity);
+                GameManager.instance.monsterAddCount++;
                 spawnCount += 1;
             }
             if(spawnCount == GameManager.instance.spawnNumber &&
